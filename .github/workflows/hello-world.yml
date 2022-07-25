@@ -16,7 +16,7 @@ jobs:
     - uses: nanasess/setup-chromedriver@v1
       with:
         # Optional: do not specify to match Chrome's version
-        chromedriver-version: '88.0.4324.96'
+        chromedriver-version: '103.0.5060.0'
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
@@ -24,9 +24,6 @@ jobs:
     - name: Setup container
       working-directory: ./app
       run: |
-        # sudo apt-get update
-        # sudo apt-get install -y chromium-driver google-chrome-stable
-        sudo apt-get remove google-chrome-stable
         pip3 install -r requirements.txt
         pip3 install -r ../requirements.txt
     - name: Run test
