@@ -23,3 +23,13 @@ Keep in mind, github actions is free for public repos but limited free for priva
 ## References
 
 https://github.com/marketplace/actions/setup-chromedriver
+
+https://www.lambdatest.com/blog/selenium-github-actions-example/
+
+https://www.lambdatest.com/blog/selenium-github-actions-example/
+
+https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions
+
+https://github.com/actions
+
+https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows

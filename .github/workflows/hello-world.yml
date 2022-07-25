@@ -3,10 +3,10 @@ name: hello-world
 on:
   push:
     branches:
-      - **
+      - '**'
   pull_request:
     branches:
-      - **
+      - 'main'
 
 jobs:
   build:
