@@ -22,10 +22,9 @@ jobs:
       with:
         python-version: 3.9
     - name: Run test
+      working-directory: ./app
       run: |
-        pip install -r requirements.txt &
-        pip install -r app/requirements.txt &
-        cd app &
-        python3 flask-helloworld.py &
-        cd .. &
-        pytest selenium_example.py
+        pip3 install -r requirements.txt
+        pip3 install -r ../requirements.txt
+        nohup python3 flask-helloworld.py
+        pytest ../selenium_example.py
