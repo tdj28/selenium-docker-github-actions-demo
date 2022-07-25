@@ -25,7 +25,7 @@ jobs:
       working-directory: ./app
       run: |
         sudo apt-get update
-        sudo apt-get upgrade chromium-driver google-chrome-stable -y
+        sudo apt-get install -y chromium-driver google-chrome-stable
         pip3 install -r requirements.txt
         pip3 install -r ../requirements.txt
     - name: Run test
