@@ -16,7 +16,7 @@ jobs:
     - uses: nanasess/setup-chromedriver@v1
       with:
         # Optional: do not specify to match Chrome's version
-        chromedriver-version: '103.0.5060.0'
+        chromedriver-version: '103.0.5060.134'
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
