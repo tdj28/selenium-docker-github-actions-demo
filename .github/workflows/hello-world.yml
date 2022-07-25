@@ -21,10 +21,15 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.9
+    - name: Setup container
+      working-directory: ./app
+      run: |
+        apt-get update
+        apt-get install -y chromium-driver
+        pip3 install -r requirements.txt
+        pip3 install -r ../requirements.txt
     - name: Run test
       working-directory: ./app
       run: |
-        pip3 install -r requirements.txt
-        pip3 install -r ../requirements.txt
         nohup python3 flask-helloworld.py &
         pytest ../selenium_example.py
