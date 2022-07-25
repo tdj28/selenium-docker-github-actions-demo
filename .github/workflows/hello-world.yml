@@ -26,5 +26,5 @@ jobs:
       run: |
         pip3 install -r requirements.txt
         pip3 install -r ../requirements.txt
-        nohup python3 flask-helloworld.py
+        nohup python3 flask-helloworld.py &
         pytest ../selenium_example.py
