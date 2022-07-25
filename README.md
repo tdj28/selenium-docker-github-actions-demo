@@ -14,7 +14,11 @@ docker run -it selenium-docker-github-actions-demo:latest
 
 ## Run on Github Actions
 
-By including the `hello-world.yml` workflow definition in this repo, github will run the test defined there just as we did in our local docker container:
+By including the `hello-world.yml` workflow definition in this repo, github will run the test defined there just as we did in our local docker container.
+
+You can see the runs in the github console:
+
+![](assets/README-eef4a.png)
 
 ![](assets/README-ff708.png)
 
